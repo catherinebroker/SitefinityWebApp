@@ -1,0 +1,110 @@
+----------------------------------------
+Timestamp: 1/17/2023 7:28:37 PM
+
+Message: Db Migration Complexity: Complex
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2023 7:28:37 PM
+
+Message: Adding a foreign key constraint(s) to a new table(s), the create table statement(s) is included as well.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2023 7:28:37 PM
+
+Message: Adding an index(indices) definition for a new table(s), the create table statement(s) is included as well.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2023 7:28:37 PM
+
+Message: Adding a new table(s).
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2023 7:28:37 PM
+
+Message: Modifying a column(s) on an existing table(s).
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2023 7:28:37 PM
+
+Message: -- Telerik.Sitefinity.DynamicTypes.Model.sf_registerforcourse
+CREATE TABLE [sf_fm_sf_registerforcourse] (
+    [id] uniqueidentifier NOT NULL,
+    [text_field_controller] NVARCHAR(255) NULL, -- sf_registerforcourse.TextFieldController
+    [pragraph_text_field_controller] NVARCHAR(MAX) NULL, -- sf_registerforcourse.ParagraphTextFieldController
+    [mltple_choice_field_controller] NVARCHAR(255) NULL, -- sf_registerforcourse.MultipleChoiceFieldController
+    [email_text_field_controller] NVARCHAR(255) NULL, -- sf_registerforcourse.EmailTextFieldController
+    [dropdown_list_field_controller] NVARCHAR(255) NULL, -- sf_registerforcourse.DropdownListFieldController
+    CONSTRAINT [pk_sf_fm_sf_registerforcourse] PRIMARY KEY ([id])
+)
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2023 7:28:37 PM
+
+Message: -- Telerik.Sitefinity.Model.ContentLinks.ContentLink[] Telerik.Sitefinity.DynamicTypes.Model.sf_registerforcourse.FileFieldController
+CREATE TABLE [sf_fm_sf_registerforcourse_filefieldcontroller] (
+    [id] uniqueidentifier NOT NULL,
+    [id2] uniqueidentifier NOT NULL,
+    CONSTRAINT [pk_sf_fm_sf_rgstrfrcr_3A7B0B35] PRIMARY KEY ([id], [id2])
+)
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2023 7:28:37 PM
+
+Message: -- Column was read from database as: [voa_class] int null
+-- modify column for field <internal-class-id>
+UPDATE [sf_form_entry]
+   SET [voa_class] = 0 -- Add your own default value here, for when [voa_class] is null.
+ WHERE [voa_class] IS NULL
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2023 7:28:37 PM
+
+Message: ALTER TABLE [sf_form_entry] ALTER COLUMN [voa_class] int NOT NULL
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2023 7:28:37 PM
+
+Message: ALTER TABLE [sf_fm_sf_registerforcourse] ADD CONSTRAINT [ref_sf_fm_sf_rgstrfrc_C7E40E24] FOREIGN KEY ([id]) REFERENCES [sf_form_entry]([id]) ON DELETE CASCADE
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2023 7:28:37 PM
+
+Message: ALTER TABLE [sf_fm_sf_registerforcourse_filefieldcontroller] ADD CONSTRAINT [ref_sf_fm_sf_rgstrfrc_E92913AB] FOREIGN KEY ([id]) REFERENCES [sf_fm_sf_registerforcourse]([id])
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2023 7:28:37 PM
+
+Message: ALTER TABLE [sf_fm_sf_registerforcourse_filefieldcontroller] ADD CONSTRAINT [ref_sf_fm_sf_rgstrfrc_AA13FDF4] FOREIGN KEY ([id2]) REFERENCES [sf_content_link]([id])
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2023 7:28:37 PM
+
+Message: -- Index 'idx_sf_fm_sf_rgstrfrcrs_flfldc' was not detected in the database. It will be created
+CREATE INDEX [idx_sf_fm_sf_rgstrfrcrs_flfldc] ON [sf_fm_sf_registerforcourse_filefieldcontroller]([id2])
+
+
+----------------------------------------
