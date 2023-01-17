@@ -108,3 +108,47 @@ CREATE INDEX [idx_sf_fm_sf_rgstrfrcrs_flfldc] ON [sf_fm_sf_registerforcourse_fil
 
 
 ----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2023 7:52:12 PM
+
+Message: Db Migration Complexity: Extending
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2023 7:52:12 PM
+
+Message: Adding a column(s) on an existing table(s).
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2023 7:52:12 PM
+
+Message: -- add column for field sf_registerforcourse.MultipleChoiceFieldController_0
+ALTER TABLE [sf_fm_sf_registerforcourse] ADD [mltpl_chice_field_controller_0] NVARCHAR(255) NULL
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2023 8:46:47 PM
+
+Message: Db Migration Complexity: Extending
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2023 8:46:47 PM
+
+Message: Adding a column(s) on an existing table(s).
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2023 8:46:47 PM
+
+Message: -- add column for field sf_registerforcourse.TextFieldController_0
+ALTER TABLE [sf_fm_sf_registerforcourse] ADD [text_field_controller_0] NVARCHAR(255) NULL
+
+
+----------------------------------------
