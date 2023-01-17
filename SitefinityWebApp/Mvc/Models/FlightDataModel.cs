@@ -13,7 +13,7 @@ namespace SitefinityWebApp.Mvc.Models
         {
             using (var client = new HttpClient())
             {
-                var response = await client.GetAsync("https://api.spacex.land/graphql/");
+                var response = await client.GetAsync("https://api.spacexdata.com/v5/launches/latest");
                 response.EnsureSuccessStatusCode();
                 var jsonString = await response.Content.ReadAsStringAsync();
                 return JsonConvert.DeserializeObject<LaunchViewModel>(jsonString);

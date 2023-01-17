@@ -9,10 +9,10 @@ namespace SitefinityWebApp.Mvc.ViewModels
 {
     public class LaunchViewModel
     {
-        [JsonProperty(PropertyName = "details")]
+        [JsonProperty(PropertyName = "flight_number")]
         public string Details { get; set; }
 
-        [JsonProperty(PropertyName = "mission_name")]
+        [JsonProperty(PropertyName = "name")]
         public string MissionName { get; set; }
     }
 }
