@@ -52,14 +52,20 @@ namespace SitefinityWebApp.Mvc.Controllers
         {
             get
             {
-
+                return new Dictionary<ConditionOperator, string>()
+                {
+                    [ConditionOperator.Equal] = "equal",
+                    [ConditionOperator.NotEqual] = "not equal"
+                };
             }
         }
 
-        // GET: LocationField
-        public ActionResult Index()
+        string ISupportRules.Title
         {
-            return View();
+            get
+            {
+                return "Location Field";
+            }
         }
     }
 }

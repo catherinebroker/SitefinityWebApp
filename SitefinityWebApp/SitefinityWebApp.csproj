@@ -807,6 +807,7 @@
     <Content Include="extensions.bundle.js" />
     <Content Include="Mvc\Controllers\readme.txt" />
     <Content Include="Mvc\Models\readme.txt" />
+    <Content Include="Mvc\Scripts\location-field.js" />
     <Content Include="Mvc\Views\readme.txt" />
     <Content Include="Mvc\Views\Shared\readme.txt" />
     <Content Include="ResourcePackages\Bootstrap4\assets\dist\css\main.css" />
@@ -942,6 +943,8 @@
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
     <Compile Include="AzureWebRole.cs" />
     <Compile Include="Mvc\Controllers\LocationFieldController.cs" />
+    <Compile Include="Mvc\Models\LocationFieldModel.cs" />
+    <Compile Include="Mvc\Models\ZoomLevel.cs" />
     <Compile Include="Mvc\ViewModels\LaunchViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MVC\Controllers\PotatoController.cs" />
@@ -957,6 +960,8 @@
     <Content Include="App_Data\RadSpell\de-DE.tdf" />
     <Content Include="App_Data\GeoLocation\GeoLite2-City.mmdb" />
     <Content Include="Mvc\Views\TextField\Write.Browsers.cshtml" />
+    <Content Include="Mvc\Views\LocationField\Write.Default.cshtml" />
+    <Content Include="Mvc\Views\LocationField\Read.Default.cshtml" />
     <None Include="packages.config" />
     <Content Include="SampleTemplate.cshtml">
       <Generator>RazorGenerator</Generator>
@@ -1123,9 +1128,7 @@
     <Analyzer Include="..\packages\AWSSDK.S3.3.3.110.9\analyzers\dotnet\cs\AWSSDK.S3.CodeAnalysis.dll" />
     <Analyzer Include="..\packages\AWSSDK.SQS.3.3.102.52\analyzers\dotnet\cs\AWSSDK.SQS.CodeAnalysis.dll" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Mvc\Views\LocationField\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
