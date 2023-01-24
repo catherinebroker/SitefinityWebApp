@@ -1,6 +1,7 @@
 [
     "SitefinityWebApp.dll",
     "SitefinityWebApp.ResourcePackages.Bootstrap4.dll",
+    "SitefinityWebApp.ResourcePackages.Custom.dll",
     "Telerik.Sitefinity.Frontend.Blogs.dll",
     "Telerik.Sitefinity.Frontend.Card.dll",
     "Telerik.Sitefinity.Frontend.Comments.dll",
