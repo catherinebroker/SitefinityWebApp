@@ -846,3 +846,5 @@ C:\Users\catherine.masaoka\Documents\Learning\SitefinityWebApp-v14\SitefinityWeb
 C:\Users\catherine.masaoka\Documents\Learning\SitefinityWebApp-v14\SitefinityWebApp\obj\Debug\SitefinityWebApp.csproj.CopyComplete
 C:\Users\catherine.masaoka\Documents\Learning\SitefinityWebApp-v14\SitefinityWebApp\obj\Debug\SitefinityWebApp.dll
 C:\Users\catherine.masaoka\Documents\Learning\SitefinityWebApp-v14\SitefinityWebApp\obj\Debug\SitefinityWebApp.pdb
+C:\Users\catherine.masaoka\Documents\Learning\SitefinityWebApp-v14\SitefinityWebApp\bin\SitefinityWebApp.ResourcePackages.Custom.dll
+C:\Users\catherine.masaoka\Documents\Learning\SitefinityWebApp-v14\SitefinityWebApp\bin\SitefinityWebApp.ResourcePackages.Custom.pdb
