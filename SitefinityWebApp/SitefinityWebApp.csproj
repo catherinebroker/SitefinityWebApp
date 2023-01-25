@@ -841,10 +841,10 @@
     <Content Include="ResourcePackages\Custom\GridSystem\Templates\grid-2+3+2+3+2.html" />
     <Content Include="ResourcePackages\Custom\GridSystem\Templates\grid-3+3+3+3.html" />
     <Content Include="ResourcePackages\Custom\GridSystem\Templates\grid-3+6+3.html" />
-    <Content Include="ResourcePackages\Custom\GridSystem\Templates\grid-3+9.html" />
     <Content Include="ResourcePackages\Custom\GridSystem\Templates\grid-4+4+4.html" />
     <Content Include="ResourcePackages\Custom\GridSystem\Templates\grid-4+8.html" />
     <Content Include="ResourcePackages\Custom\GridSystem\Templates\grid-6+6.html" />
+    <Content Include="ResourcePackages\Custom\GridSystem\Templates\grid-7+5.html" />
     <Content Include="ResourcePackages\Custom\GridSystem\Templates\grid-8+4.html" />
     <Content Include="ResourcePackages\Custom\GridSystem\Templates\grid-9+3.html" />
     <Content Include="ResourcePackages\Custom\MVC\Scripts\Navigation\pills.js" />
