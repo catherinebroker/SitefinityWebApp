@@ -1285,6 +1285,9 @@
     <Content Include="ResourcePackages\Custom\package.json" />
     <Content Include="ResourcePackages\Custom\razorgenerator.directives" />
     <Content Include="ResourcePackages\Custom\README.md" />
+    <Content Include="ResourcePackages\Custom\MVC\Views\Card\Card.Circle" />
+    <Content Include="ResourcePackages\Custom\MVC\Views\Card\Card.Circle.cshtml" />
+    <Content Include="ResourcePackages\Custom\MVC\Views\News\List.FeaturedArticles.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
