@@ -962,6 +962,7 @@
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
     <Compile Include="AzureWebRole.cs" />
     <Compile Include="Mvc\Controllers\LocationFieldController.cs" />
+    <Compile Include="Mvc\Models\CategoryFilterNewsModel.cs" />
     <Compile Include="Mvc\Models\LocationFieldModel.cs" />
     <Compile Include="Mvc\Models\ZoomLevel.cs" />
     <Compile Include="Mvc\ViewModels\LaunchViewModel.cs" />
