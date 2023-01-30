@@ -23,7 +23,7 @@
             </div>
             
             <div class="col-md-5 @((isOdd)? "order-md-1" : "")">
-                <a href="@navigateUrl">@*<img class="featurette-image img-fluid mx-auto" src="@item.Fields.Thumbnail.Fields.MediaUrl" alt="@item.Fields.Thumbnail.Fields.AlternativeText">*@ @item.Fields</a>
+                <a href="@navigateUrl"><img class="featurette-image img-fluid mx-auto" src="@item.Fields.FeaturedImage.Fields.MediaUrl" alt="@item.Fields.FeaturedImage.Fields.AlternativeText"></a>
             </div>
         </div>
                     i++;
